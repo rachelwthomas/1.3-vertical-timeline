@@ -11,28 +11,32 @@ img {
   width: 100%;
 }
 .container{
-  /* text-align: center; */
+  display: block;
+  margin: auto;
+  /* max-width: 1200px; */
+  position: relative;
+
 }
 
 .container::after {
   content: '';
   position: absolute;
-  width: 20px;
+  width: 6px;
   background-color: blue;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -3px;
+  /* margin-left: -3px; */
 }
 
 
 .box {
-  display: inline-block;
 
-  width: 550px;
+  width: 42%;
   background-color: white;
   position: relative;
   border-radius: 3px;
+  margin: 55px;
 
   box-shadow: 0px 5px 5px #6A6A6A;
 
@@ -65,30 +69,14 @@ img {
   padding-top: 20px;
 }
 
-/* box 2 styling */
 
 
-
-
-
-/******************************************************* box 1 positioning */
-
-.box-1 {
-  top: 50px;
-  left: 150px;
-}
 /******************************************************** box 2 positiong */
 
 .box-2 {
-  top: 300px;
-  left: 430px;
+  left: 50%;
 }
 
-/******************************************************** box 2 positiong */
-.box-3 {
-  top: 600px;
-  right: 950px;
-}
 
 .date {
   display: inline-block;
