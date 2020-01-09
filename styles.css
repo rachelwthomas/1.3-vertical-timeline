@@ -13,7 +13,7 @@ img {
 .container{
   display: block;
   margin: auto;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   position: relative;
 
 }
@@ -22,7 +22,7 @@ img {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: blue;
+  background-color: #276288;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -51,6 +51,56 @@ img {
   /* padding-left: 20px; */
 
 }
+/************************************************************* arrows */
+
+.content-left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 47px;
+  width: 0;
+  right: -9px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.content-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 37px;
+  width: 0;
+  left: -10px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+
+/***************************************** circles for left side boxes */
+.box::after {
+  content: '';
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  right: -58px;
+  background-color: #276288;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/******************************************* circles for right side box */
+
+div.box-2::after {
+  left: -66px;
+}
+
+
+
+
+
 
 
  /* box 2 h1 color  */
@@ -103,7 +153,7 @@ img {
   top: 0px;
 }
 
-.box-content{
+.box1-content{
   padding: 10px 0px;
 }
 
