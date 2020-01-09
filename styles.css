@@ -80,7 +80,7 @@ img {
 
 /***************************************** circles for left side boxes */
 .box::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 29px;
   height: 29px;
